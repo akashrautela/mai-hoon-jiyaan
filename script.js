@@ -43,6 +43,9 @@ let player = {
     isMoving: false
 }
 
+canvas.addEventListener('touchstart', ()=> player.isMoving = true);
+canvas.addEventListener('touchend', ()=> player.isMoving = false);
+
 canvas.addEventListener('mousedown', function () {
     player.isMoving = true;
 })
